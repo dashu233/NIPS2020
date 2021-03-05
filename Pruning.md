@@ -10,3 +10,8 @@ Pruning is all you need(2l-depth untrained sub-network can archieve l-depth trai
 
 Idea: use weight decomposition to obtain log(1/\epsilon) dependency on neurons for mimic weights
 
+2. Pruning neural networks without any data
+by iteratively conserving synaptic flow
+
+Idea: the unmatch of pruning rate and layer collapse rate doesn't match, cause the sharp degrease of proformance as pruning rate goes higher. the authors use SynFlow to make the pruning rate more 'smooth' between layers, so when pruning rate goes high, the proformance degrease slow
+
